@@ -1,0 +1,5 @@
+/* 引入基础样式 */
+@import './styles/index.css';
+
+/* 引入tailwind.css */
+@import './tailwind.css';
