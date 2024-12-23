@@ -27,12 +27,13 @@ export default ({ mode }: ConfigEnv): UserConfig => {
       },
       dedupe: ['vue']
     },
-    plugins: [vue(),vueJsx(), vueDevTools()],
+    plugins: [vue(), vueJsx(), vueDevTools()],
     define: {
       __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: false
     },
     server: {
       host: true,
+      port: 5199,
       proxy: {
         [env.VITE_APP_BASE_API]: {
           target: 'http://192.168.7.200:8888',
@@ -46,7 +47,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
       exclude: ['vue-demi']
     },
     build: {
-      outDir: 'build/dist',
+      outDir: 'build/dist'
     },
     css: {
       // 开启devSourcemap
@@ -59,4 +60,3 @@ export default ({ mode }: ConfigEnv): UserConfig => {
     }
   }
 }
-

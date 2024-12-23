@@ -22,7 +22,9 @@ export default [
   {
     rules: {
       // 关闭 Vue 组件多词名校验
-      'vue/multi-word-component-names': 'off'
+      'vue/multi-word-component-names': 'off',
+      // 关闭 @typescript-eslint/no-explicit-any 校验
+      '@typescript-eslint/no-explicit-any': 'off'
     }
   }
 ]

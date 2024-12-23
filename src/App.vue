@@ -1,5 +1,5 @@
 <template>
-  <van-config-provider :theme-vars="themeVars" class="size-full">
+  <van-config-provider :theme-vars="themeVars" theme-vars-scope="global" class="size-full">
     <RouterView />
   </van-config-provider>
 </template>

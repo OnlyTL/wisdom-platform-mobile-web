@@ -3,3 +3,6 @@
 
 /* 引入tailwind.css */
 @import './tailwind.css';
+
+/* 引入iconfont */
+@import "./iconfont/iconfont.css";
