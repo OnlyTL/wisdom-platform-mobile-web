@@ -9,6 +9,9 @@ import router from './router'
 
 import { setupStore } from '@/stores'
 import { setUpVantGlobalApi } from '@/plugins/vantGlobalApi.ts'
+import VConsole from 'vconsole'
+
+const vConsole = new VConsole()
 
 const app = createApp(App)
 app.use(router)

@@ -47,7 +47,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
       exclude: ['vue-demi']
     },
     build: {
-      outDir: 'build/dist'
+      outDir: 'dist'
     },
     css: {
       // 开启devSourcemap
